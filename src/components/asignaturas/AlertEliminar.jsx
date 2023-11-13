@@ -15,7 +15,7 @@ import {
 import { useDispatch } from 'react-redux';
 import { MdDelete } from 'react-icons/md';
 import { AiOutlineAlert } from 'react-icons/ai';
-import { deleteGrado } from '../../features/gradoSlice';
+import { deleteAsignatura } from '../../features/asignaturaSlice';
 
 export const AlertEliminar = ({ row }) => {
 
@@ -32,7 +32,7 @@ export const AlertEliminar = ({ row }) => {
     }
 
     const handleDelete = (id) => {
-        dispatch(deleteGrado(id));
+        dispatch(deleteAsignatura(id));
     }
 
     return (
